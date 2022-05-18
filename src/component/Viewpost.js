@@ -613,16 +613,21 @@ const Viewpost = () => {
                     <div className='row g-3'>
                          {viewlist.map((value,key)=>
                          {
-                           return <div className='col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3'>
-                           <div class="card" >
-                           <img src="https://image.shutterstock.com/image-vector/new-post-neon-text-video-600w-1444569020.jpg" class="card-img-top" alt="https://image.shutterstock.com/image-vector/new-post-neon-text-video-600w-1444569020.jpg"/>
-                           <div class="card-body">
-                             <h5 class="card-title">{value.userId}</h5>
-                             <h5 class="card-title">{value.id}</h5>
-                             <p class="card-text">{value.title}</p>
-                             <p class="card-text">{value.body}</p>
-                             <a href="#" class="btn btn-primary">view</a>
-                           </div></div>
+                           return <div className='col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12'>
+                           <div class="card mb-3">
+                          <div class="row g-0">
+                         <div class="col-md-4">
+                <img src="https://image.shutterstock.com/image-vector/new-post-neon-text-video-600w-1444569020.jpg" height="10px" width="200px" class="img-fluid rounded-start" alt="https://image.shutterstock.com/image-vector/new-post-neon-text-video-600w-1444569020.jpg"/>
+                   </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{value.title}</h5>
+        <p class="card-text">{value.body}</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
                          </div>
 
                         
